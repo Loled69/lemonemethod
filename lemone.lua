@@ -18,6 +18,17 @@ menu.add_feature("READ ME", "action", moneyManu.id, function(f)
 	system.wait(3000)
 	menu.notify("VALUE SHOULD BE MODIFIED")
 end)
+
 menu.add_feature("Real Estate Scam", "action", moneyManu.id, function(f)
     ezBan()
+end)
+
+
+menu.add_feature("Real Cargo Scam", "toggle", moneyManu.id, function(f)
+  while f.on do
+        for L4_2 = 22810, 22818, 1 do
+            script.set_global_i(globals["Cargo"] + L4_2, 20000000)
+        end
+        system.wait(0)
+    end
 end)
