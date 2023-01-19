@@ -10,7 +10,6 @@ nlprice2 = gameplay.get_hash_key("MP1_PROP_NIGHTCLUB_VALUE")
   end
  end
 
-
 moneyManu = menu.add_feature("mone stuffz", "parent", 0)
 menu.add_feature("READ ME", "action", moneyManu.id, function(f)
     menu.notify("CLICK THE FEATURE Real Estate Scam")
@@ -20,8 +19,11 @@ menu.add_feature("READ ME", "action", moneyManu.id, function(f)
 	menu.notify("VALUE SHOULD BE MODIFIED")
 end)
 
-menu.add_feature("Real Estate Scam", "action", moneyManu.id, function(f)
-    ezBan()
+menu.add_feature("Real Estate Scam", "toggle", moneyManu.id, function(f)
+    while f.on do
+	ezBan()
+	system.wait(0)
+  end
 end)
 
 
