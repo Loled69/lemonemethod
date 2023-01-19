@@ -4,9 +4,9 @@ nlprice2 = gameplay.get_hash_key("MP1_PROP_NIGHTCLUB_VALUE")
 
    local leplayer = script.get_global_i(1574918)
   if leplayer == 0 then
-    stats.stat_set_int(nlprice, ((500000000*2) + 4500000), true)
+    stats.stat_set_int(nlprice, ((1000000000*2) + 4500000), true)
   else
-    stats.stat_set_int(nlprice2, ((500000000*2) + 4500000), true)
+    stats.stat_set_int(nlprice2, ((1000000000*2) + 4500000), true)
   end
  end
 
