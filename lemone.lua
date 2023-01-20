@@ -1,3 +1,12 @@
+if not menu.is_trusted_mode_enabled(1 << 1) then --Trust dem globalz on
+    menu.notify("turn dem globalz on")
+    menu.exit()
+end
+if not menu.is_trusted_mode_enabled(1 << 0) then --Trust dem statz on
+    menu.notify("turn dem statz on")
+    menu.exit()
+end
+
 local function ezBan()
 nlprice = gameplay.get_hash_key("MP0_PROP_NIGHTCLUB_VALUE")
 nlprice2 = gameplay.get_hash_key("MP1_PROP_NIGHTCLUB_VALUE")
