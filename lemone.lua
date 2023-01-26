@@ -45,7 +45,7 @@ menu.add_feature("Real Cargo Scam", "toggle", moneyManu.id, function(f)
     end
 end)
 
---
+-- Made by decco, thanks a lot
 local function simulate_a_mouse_click()
     native.call(0x351220255D64C155, 2, 237, true)
     native.call(0xE8A25867FBA3B05E, 2, 237, 1.0)
@@ -96,4 +96,4 @@ menu.add_feature("move mouse", "toggle", moneyManu.id, function(f)
         system.wait()
     end
 end)
--- Made by decco, thanks a lot
+--
