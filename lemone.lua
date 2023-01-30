@@ -35,11 +35,47 @@ menu.add_feature("Real Estate Scam", "toggle", moneyManu.id, function(f)
   end
 end)
 
+menu.add_feature("Instant Source","action", moneyManu.id, function(f)
+    script.set_local_i(2882788887, 1999, -1)
+end)
+
+menu.add_feature("special cargo = 5m", "toggle", moneyManu.id, function(f)
+    while f.on do
+        script.set_global_i(278133,5780000)
+        script.set_global_i(278131,5780000)
+        script.set_global_i(278135,5780000)
+        script.set_global_i(278129,5780000)
+        script.set_global_i(278127,5780000)
+        script.set_global_i(278137,5780000)
+        script.set_global_i(277933,5791000)
+        script.set_global_i(277934,2895500)
+        script.set_global_i(277935,1930333)
+        script.set_global_i(277936,1158200)
+        script.set_global_i(277937,827285)
+        script.set_global_i(277938,643444)
+        script.set_global_i(277939,413642)
+        script.set_global_i(277940,304789)
+        script.set_global_i(277941,241291)
+        script.set_global_i(277942,199689)
+        script.set_global_i(277943,170323)
+        script.set_global_i(277944,148487)
+        script.set_global_i(277945,131613)
+        script.set_global_i(277946,118183)
+        script.set_global_i(277947,98152)
+        script.set_global_i(277948,83927)
+        script.set_global_i(277949,73303)
+        script.set_global_i(277950,65067)
+        script.set_global_i(277951,58494)
+        script.set_global_i(277952,52645)
+        script.set_global_i(277953,52171)
+        system.wait()
+    end
+end)
 
 menu.add_feature("Real Cargo Scam", "toggle", moneyManu.id, function(f)
   while f.on do
         for L4_2 = 22810, 22818, 1 do
-            script.set_global_i(globals["Cargo"] + L4_2, 20000000)
+            script.set_global_i(262145 + L4_2, 20000000)
         end
         system.wait(0)
     end
