@@ -133,3 +133,6 @@ menu.add_feature("move mouse", "toggle", moneyManu.id, function(f)
     end
 end)
 --
+
+
+-- Before you skid this shit learn how to check for last character used (Pro Tip)
